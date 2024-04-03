@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form>
+        <h1>Opskrifter</h1>
+
+        <label for="form_name">Navn</label>
+        <input id="form_name" type="text" name="name" required>
+
+        <!-- text area-->
+        <!--<label for=”form_description”>Beskrivelse</label>
+        <input id=”form_description” type=“text” name="description">-->
+
+        <label for=”form_description”>Beskrivelse</label>
+        <textarea id="form_description" name="description" input="text"></textarea>
+        <!--<input id=”form_description” type=“text” name="description">-->
+
+        <!-- se denne igen jsonb-->
+        <label for="form_ingriedients">Ingredienser</label>
+        <input id="form_ingriedients" type="text" name="ingriedients">
+
+        <label for="form_serves">Opskrift til hvor mange personer</label>
+        <input id="form_serves" type="number" name="serves" min="1" max="20" required>
+
+        <!-- jsonb??-->
+        <fieldset class="allergi-group">
+            <legend>
+                <h3>allergier</h3>
+            </legend>
+
+            <!--<p>Allergier</p>-->
+            <label for="form_allergens_gluten">Gluten</label>
+            <input id="form_allergens_gluten" type="checkbox" name="diet">
+            <label for="form_allergens_laktose">Laktose</label>
+            <input id="form_allergens_laktose" type="checkbox" name="diet">
+        </fieldset>
+
+        <fieldset>
+
+            <legend>
+                <h3>Diæt</h3>
+            </legend>
+            <!--<p>Diæt</p>-->
+            <label for="form_diet_vegetarian">Vegetar</label>
+            <input id="form_diet_vegetarian" type="radio" name="diet">
+            <label for="form_diet_veganer">Veganer</label>
+            <input id="form_diet_veganer" type="radio" name="diet">
+        </fieldset>
+
+        <fieldset>
+            <legend>
+                <h3>SU venligt</h3>
+            </legend>
+
+            <!--<p>SU venligt</p>-->
+            <label for="form_studentFiendly_yes">Ja</label>
+            <input id="form_studentFiendly_yes" type="radio" name="studentFiendly">
+            <label for="form_studentFiendly">Nej</label>
+            <input id="form_studentFiendly" type="radio" name="studentFiendly">
+        </fieldset>
+
+        <label for="form_origin">Oprindelse</label>
+        <input id="form_origin" type="select" name="origin">
+    <button>Submit</button>
+    </form>
+
+    
+
+</body>
+
+</html>
