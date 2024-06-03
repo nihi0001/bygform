@@ -4,16 +4,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Opskrifter</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="container">
+    <header>
+        <div>
+            <h1>Opskrifter</h1>
+            <p>Tilføj din opskrift</p>
+        </div>
+    </header>
 
     <form>
-        <h1>Opskrifter</h1>
+  
 
-        <label for="form_name">Navn</label>
+        <label for="form_name">Navn på opskriften</label>
         <input id="form_name" type="text" name="name" required>
 
         <!-- text area-->
@@ -28,13 +35,13 @@
         <label for="form_ingriedients">Ingredienser</label>
         <input id="form_ingriedients" type="text" name="ingriedients">
 
-        <label for="form_serves">Opskrift til hvor mange personer</label>
+        <label for="form_serves">Personer?</label>
         <input id="form_serves" type="number" name="serves" min="1" max="20" required>
 
         <!-- jsonb??-->
         <fieldset class="allergi-group">
             <legend>
-                <h3>allergier</h3>
+                <h3>Allergier</h3>
             </legend>
 
             <!--<p>Allergier</p>-->
@@ -70,11 +77,11 @@
 
         <label for="form_origin">Oprindelse</label>
         <input id="form_origin" type="select" name="origin">
-    <button>Submit</button>
+    <button>Tilføj</button>
     </form>
 
     
-
+</div>
 </body>
 
 </html>
