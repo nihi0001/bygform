@@ -21,22 +21,33 @@
   
 
         <label for="form_name">Navn på opskriften</label>
-        <input id="form_name" type="text" name="name" required>
+        <input id="form_name" type="text" name="name" placeholder="Indtast navn på opskriften" required>
 
         <!-- text area-->
         <!--<label for=”form_description”>Beskrivelse</label>
         <input id=”form_description” type=“text” name="description">-->
 
         <label for=”form_description”>Beskrivelse</label>
-        <textarea id="form_description" name="description" input="text"></textarea>
+        <textarea id="form_description" name="description" input="text" placeholder="Beskriv opskriften"></textarea>
         <!--<input id=”form_description” type=“text” name="description">-->
 
         <!-- se denne igen jsonb-->
         <label for="form_ingriedients">Ingredienser</label>
-        <input id="form_ingriedients" type="text" name="ingriedients">
+        <input id="form_ingriedients" type="text" name="ingriedients" placeholder="List ingredienserne">
 
         <label for="form_serves">Personer?</label>
-        <input id="form_serves" type="number" name="serves" min="1" max="20" required>
+        <input id="form_serves" type="number" name="serves" min="1" max="20" placeholder="Angiv antal personer" required>
+
+        <label for="form_origin">Oprindelse</label>
+        <select id="form_origin" name="origin">
+            <option value="">Vælg det land retten stammer fra</option>
+            <option value="danmark">Danmark</option>
+            <option value="italien">Italien</option>
+            <option value="kinesisk">Kina</option>
+            <option value="indien">Indien</option>
+            <option value="mexico">Mexico</option>
+            <option value="indien">Spanien</option>
+        </select>
 
         <!-- jsonb??-->
         <fieldset class="allergi-group">
@@ -75,8 +86,6 @@
             <input id="form_studentFiendly" type="radio" name="studentFiendly">
         </fieldset>
 
-        <label for="form_origin">Oprindelse</label>
-        <input id="form_origin" type="select" name="origin">
     <button>Tilføj</button>
     </form>
 
