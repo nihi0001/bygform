@@ -24,15 +24,9 @@
         <label for="form_name">Navn på opskriften</label>
         <input id="form_name" type="text" name="name" placeholder="Indtast navn på opskriften" required>
 
-        <!-- text area-->
-        <!--<label for=”form_description”>Beskrivelse</label>
-        <input id=”form_description” type=“text” name="description">-->
-
         <label for=”form_description”>Beskrivelse</label>
         <textarea id="form_description" name="description" input="text" placeholder="Beskriv opskriften"></textarea>
-        <!--<input id=”form_description” type=“text” name="description">-->
-
-        <!-- se denne igen jsonb-->
+ 
         <label for="form_ingriedients">Ingredienser</label>
         <input id="form_ingriedients" type="text" name="ingriedients" placeholder="List ingredienserne">
 
@@ -50,13 +44,11 @@
             <option value="indien">Spanien</option>
         </select>
 
-        <!-- jsonb??-->
         <fieldset class="allergi-group">
             <legend>
                 <h3>Allergier</h3>
             </legend>
 
-            <!--<p>Allergier</p>-->
             <label for="form_allergens_gluten">Gluten</label>
             <input id="form_allergens_gluten" type="checkbox" name="diet">
             <label for="form_allergens_laktose">Laktose</label>
@@ -68,7 +60,6 @@
             <legend>
                 <h3>Diæt</h3>
             </legend>
-            <!--<p>Diæt</p>-->
             <label for="form_diet_vegetarian">Vegetar</label>
             <input id="form_diet_vegetarian" type="radio" name="diet">
             <label for="form_diet_veganer">Veganer</label>
@@ -80,7 +71,6 @@
                 <h3>SU venligt</h3>
             </legend>
 
-            <!--<p>SU venligt</p>-->
             <label for="form_studentFiendly_yes">Ja</label>
             <input id="form_studentFiendly_yes" type="radio" name="studentFiendly">
             <label for="form_studentFiendly">Nej</label>
